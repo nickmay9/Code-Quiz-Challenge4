@@ -218,7 +218,7 @@ function submitResults() {
     var nameInput = document.querySelector("input[name='initials']").value;
 
     localStorage.setItem("name", nameInput);
-    localStorage.setItem("finalScore", timeLeft);
+    localStorage.setItem("time", timeLeft)
 }
 
 var quizBtn = document.querySelector(".quiz-answers[quiz-buttons='" + 0 + "']");

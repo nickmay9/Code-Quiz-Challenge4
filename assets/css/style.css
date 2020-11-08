@@ -34,3 +34,12 @@ main {
 .quiz-answers button:hover {
     background-color: blueviolet;
 }
+
+#highscore-screen {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#highscore-screen:nth-child(2) {
+    background-color: rbba(54, 17, 89, 0.5);
+}
