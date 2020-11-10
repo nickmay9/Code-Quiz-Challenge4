@@ -8,6 +8,7 @@ var timeInterval;
 var contentToHide;
 var quizContentContainerEl;
 var id;
+var scoreArr = [];
 var quizId = 0;
 var quizObj = [
 {
@@ -217,8 +218,9 @@ function wrongAns() {
 function submitResults() {
     var nameInput = document.querySelector("input[name='initials']").value;
 
-    localStorage.setItem("name", nameInput);
-    localStorage.setItem("time", timeLeft)
+    scoreArr.push(nameInput, timeLeft);
+    localStorage.setItem("highscore", JSON.stringify(scoreArr));
+
 }
 
 var quizBtn = document.querySelector(".quiz-answers[quiz-buttons='" + 0 + "']");
